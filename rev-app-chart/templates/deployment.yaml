@@ -1,0 +1,20 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata: 
+  name: rev-app
+spec: 
+  selector:
+    matchLabels: 
+      app: rev-app 
+  template:
+    metadata:
+      labels: 
+        app: rev-app
+    spec:
+      containers: 
+      - name: rev-app
+        image: theoafactor/rev_app:1
+        ports: 
+        - containerPort: 80
+
+      
