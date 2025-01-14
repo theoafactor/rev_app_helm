@@ -13,7 +13,7 @@ spec:
     spec:
       containers: 
       - name: rev-app
-        image: theoafactor/rev_app:1
+        image: theoafactor/rev_app:2
         ports: 
         - containerPort: 80
 
